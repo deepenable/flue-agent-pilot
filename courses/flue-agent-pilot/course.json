@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "courseId": "flue-agent-pilot",
+  "title": { "zh-CN": "Flue Agent：技能、上下文与能力边界" },
+  "summary": { "zh-CN": "面向 TypeScript/Node.js 开发者与技术架构师，基于固定版 Flue 源码学习 harness、skills、tools、sandbox 与评估边界。包含四章教材、三个核心实验和两个需自备账号与授权的可选实作。" },
+  "defaultLocale": "zh-CN",
+  "labs": [
+    {
+      "id": "getting-started",
+      "title": { "zh-CN": "开始学习" },
+      "requires": [],
+      "chapters": [
+        { "id": "overview", "title": { "zh-CN": "学习目标与路线" }, "files": { "zh-CN": "overview.md" } },
+        { "id": "environment", "title": { "zh-CN": "环境与实验材料" }, "files": { "zh-CN": "lab-manual/README.md" } }
+      ]
+    },
+    {
+      "id": "agent-harness",
+      "title": { "zh-CN": "Harness 与资源流" },
+      "requires": [],
+      "chapters": [
+        { "id": "harness-concepts", "title": { "zh-CN": "Agent-native harness" }, "files": { "zh-CN": "textbook/01-agent-harness.md" } },
+        { "id": "trace-an-agent", "title": { "zh-CN": "L1 技能与资源流追踪" }, "files": { "zh-CN": "lab-manual/01-trace-an-agent.md" } }
+      ]
+    },
+    {
+      "id": "skills-and-context",
+      "title": { "zh-CN": "技能与上下文" },
+      "requires": [],
+      "chapters": [
+        { "id": "skill-concepts", "title": { "zh-CN": "技能包与逐步披露" }, "files": { "zh-CN": "textbook/02-skills-and-context.md" } },
+        { "id": "build-a-skill", "title": { "zh-CN": "L2 修改与打包技能" }, "files": { "zh-CN": "lab-manual/02-build-a-skill.md" } }
+      ]
+    },
+    {
+      "id": "capability-boundaries",
+      "title": { "zh-CN": "工具与能力边界" },
+      "requires": [],
+      "chapters": [
+        { "id": "sandbox-concepts", "title": { "zh-CN": "工具与 Sandbox" }, "files": { "zh-CN": "textbook/03-tools-and-sandboxes.md" } },
+        { "id": "choose-boundaries", "title": { "zh-CN": "L3 三场景边界选择" }, "files": { "zh-CN": "lab-manual/03-choose-capability-boundaries.md" } }
+      ]
+    },
+    {
+      "id": "evaluation",
+      "title": { "zh-CN": "评估与可观测性" },
+      "requires": [],
+      "chapters": [
+        { "id": "evaluation-concepts", "title": { "zh-CN": "评估证据与运行前提" }, "files": { "zh-CN": "textbook/04-evaluation-and-observability.md" } }
+      ]
+    },
+    {
+      "id": "optional-activation",
+      "title": { "zh-CN": "可选：技能激活" },
+      "requires": [],
+      "chapters": [
+        { "id": "activate-and-observe", "title": { "zh-CN": "L4 激活与资源观察" }, "files": { "zh-CN": "lab-manual/optional/04-activate-and-observe.md" } }
+      ]
+    },
+    {
+      "id": "optional-agent-eval",
+      "title": { "zh-CN": "可选：Agent eval" },
+      "requires": [],
+      "chapters": [
+        { "id": "evaluate-an-agent", "title": { "zh-CN": "L5 评测与负例设计" }, "files": { "zh-CN": "lab-manual/optional/05-evaluate-an-agent.md" } }
+      ]
+    },
+    {
+      "id": "reference-material",
+      "title": { "zh-CN": "参考资料" },
+      "requires": [],
+      "chapters": [
+        { "id": "glossary", "title": { "zh-CN": "术语表" }, "files": { "zh-CN": "resources/glossary.md" } },
+        { "id": "references", "title": { "zh-CN": "参考链接" }, "files": { "zh-CN": "resources/references.md" } },
+        { "id": "further-reading", "title": { "zh-CN": "延伸阅读" }, "files": { "zh-CN": "resources/further-reading.md" } },
+        { "id": "third-party-notices", "title": { "zh-CN": "第三方来源说明" }, "files": { "zh-CN": "THIRD_PARTY_NOTICES.md" } },
+        { "id": "apache-license", "title": { "zh-CN": "Apache-2.0 许可全文" }, "files": { "zh-CN": "resources/apache-2.0.md" } }
+      ]
+    }
+  ],
+  "assets": []
+}

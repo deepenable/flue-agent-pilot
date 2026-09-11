@@ -1,0 +1,495 @@
+{
+  "kind": "Delivery inventory and source-preservation record; not a platform validator",
+  "sourceCommit": "23c1aa6fd33ba689815fdae69490263924808099",
+  "courseRoot": "courses/flue-agent-pilot",
+  "courseId": "flue-agent-pilot",
+  "locale": "zh-CN",
+  "labs": 8,
+  "chapters": 16,
+  "originalFiles": 58,
+  "declaredFiles": 17,
+  "declaredBytes": 91723,
+  "preservedCodeFences": 45,
+  "courseFingerprintSha256": "aa1749a5eb470ce360a4cb257e6f6e15ca9f3f2cc08a2d10fae2dcaa85263098",
+  "sourceFiles": [
+    {
+      "path": "README.md",
+      "bytes": 6434,
+      "sha256": "8e43918d0d8fac3771465c4a5b56c4354263f9bce9b3682346bf66821ba0a039"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 861,
+      "sha256": "0cfb1a9f13e666e916bcfefbe7c7dc6c2affeb61494d6ab48a053d318c43ace9"
+    },
+    {
+      "path": "lab-files/README.md",
+      "bytes": 332,
+      "sha256": "4e661818a03c024f1b923a596a80680ab42ff699c25cfb932ca598684008e511"
+    },
+    {
+      "path": "lab-files/lab-01/README.md",
+      "bytes": 361,
+      "sha256": "0949aff5cb5db8ea4c2737c934dffe5bfdb99b58aabbd810364984b4fd497918"
+    },
+    {
+      "path": "lab-files/lab-01/answer-template.json",
+      "bytes": 483,
+      "sha256": "e014e2919353bb189522ba5889e438334e13f603825b45b38e1d329bbb73e6fe"
+    },
+    {
+      "path": "lab-files/lab-01/examples/bad-answer.json",
+      "bytes": 306,
+      "sha256": "38ff3adab8c18eb9f3e319aac57b11d6be532be1e628bdec4e831c1d74b20dce"
+    },
+    {
+      "path": "lab-files/lab-01/examples/good-answer.json",
+      "bytes": 1345,
+      "sha256": "9be4e029de75e066985bef6293a79a9274bcaa60e164b6ddead982c2edd625cc"
+    },
+    {
+      "path": "lab-files/lab-01/self-check.mjs",
+      "bytes": 2497,
+      "sha256": "0f5b178fab77a8e04ac1fdde6a2ca838eeae80c5924d2fed530d0004150ddf2b"
+    },
+    {
+      "path": "lab-files/lab-01/source-paths.json",
+      "bytes": 483,
+      "sha256": "e19267e7f1930bce1619e1f12e5f94a4dc8d796550c04d8c8574692506c5576c"
+    },
+    {
+      "path": "lab-files/lab-02/README.md",
+      "bytes": 683,
+      "sha256": "f1baa335c0233ef9e7144336d29515f622b6b0574a1927256472e28cf8a5c097"
+    },
+    {
+      "path": "lab-files/lab-02/build-plan.template.json",
+      "bytes": 1736,
+      "sha256": "8d596bae5accf39703b1a46fe784e26c000435f7fec20773147f2a1567161df1"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/bad-name-mismatch/src/skills/review/CHECKLIST.txt",
+      "bytes": 55,
+      "sha256": "eaf38ac6e14aa6a81144218df029f124b014d5a55c1a131dc030561cd99308d1"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/bad-name-mismatch/src/skills/review/SKILL.md",
+      "bytes": 170,
+      "sha256": "930ec4ab49814db6ce7b25bf68f651c9a54e772888058b5e15da7ae0f6c7fc33"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/bad-name-mismatch/src/skills/review/STYLE.txt",
+      "bytes": 62,
+      "sha256": "7e5bd0a8ca8f2138532d48f0905688db44ceeb351aa5f061507619dce3ad3944"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/good/src/skills/review/CHECKLIST.txt",
+      "bytes": 55,
+      "sha256": "eaf38ac6e14aa6a81144218df029f124b014d5a55c1a131dc030561cd99308d1"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/good/src/skills/review/SKILL.md",
+      "bytes": 182,
+      "sha256": "c717f626348119d4cdfba46e8c40d82b6535ebbabbbe8aec14db22ad6f6434d0"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/good/src/skills/review/STYLE.txt",
+      "bytes": 62,
+      "sha256": "7e5bd0a8ca8f2138532d48f0905688db44ceeb351aa5f061507619dce3ad3944"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/missing-style-reference/src/skills/review/CHECKLIST.txt",
+      "bytes": 55,
+      "sha256": "eaf38ac6e14aa6a81144218df029f124b014d5a55c1a131dc030561cd99308d1"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/missing-style-reference/src/skills/review/SKILL.md",
+      "bytes": 170,
+      "sha256": "c983ab8ccc0b30b890c8a2019c443e7fdb89fa029343fdc8c543b8189b751337"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/missing-style-reference/src/skills/review/STYLE.txt",
+      "bytes": 62,
+      "sha256": "7e5bd0a8ca8f2138532d48f0905688db44ceeb351aa5f061507619dce3ad3944"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/missing-style/src/skills/review/CHECKLIST.txt",
+      "bytes": 55,
+      "sha256": "eaf38ac6e14aa6a81144218df029f124b014d5a55c1a131dc030561cd99308d1"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/missing-style/src/skills/review/SKILL.md",
+      "bytes": 182,
+      "sha256": "c717f626348119d4cdfba46e8c40d82b6535ebbabbbe8aec14db22ad6f6434d0"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/repaired/src/skills/review/CHECKLIST.txt",
+      "bytes": 55,
+      "sha256": "eaf38ac6e14aa6a81144218df029f124b014d5a55c1a131dc030561cd99308d1"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/repaired/src/skills/review/SKILL.md",
+      "bytes": 182,
+      "sha256": "c717f626348119d4cdfba46e8c40d82b6535ebbabbbe8aec14db22ad6f6434d0"
+    },
+    {
+      "path": "lab-files/lab-02/fixtures/repaired/src/skills/review/STYLE.txt",
+      "bytes": 62,
+      "sha256": "7e5bd0a8ca8f2138532d48f0905688db44ceeb351aa5f061507619dce3ad3944"
+    },
+    {
+      "path": "lab-files/lab-02/self-check.mjs",
+      "bytes": 2992,
+      "sha256": "7baf4c3981cc9729372fcc9cefee6a7fc1a10e5d59a97406e7c9efa1d767fa07"
+    },
+    {
+      "path": "lab-files/lab-03/README.md",
+      "bytes": 356,
+      "sha256": "73b5b8b28d2abae0165f80a1eb27bc6b1c65c4a524d7d6a0f98c1517ef9c8e77"
+    },
+    {
+      "path": "lab-files/lab-03/boundary-decision.template.json",
+      "bytes": 723,
+      "sha256": "a1a717eea23d4c5cbf3fcf27a118ea7384ef3c86e2f30ec5d4d409b5d9bd44df"
+    },
+    {
+      "path": "lab-files/lab-03/examples/bad-decision.json",
+      "bytes": 583,
+      "sha256": "9d9e91c17e50ebe8fb5422f73639904d993ca5f8e1fabef30253cdd57b2c3c58"
+    },
+    {
+      "path": "lab-files/lab-03/examples/good-decision.json",
+      "bytes": 1585,
+      "sha256": "e199d118c56d9645a21ca14564da8cab9b245fa6e95f6f862d9343b8e1bd0333"
+    },
+    {
+      "path": "lab-files/lab-03/scenarios.json",
+      "bytes": 851,
+      "sha256": "af292a1299f7d6eb155a2a7953dde631d3314cad8e4e4616b66f4001963c7573"
+    },
+    {
+      "path": "lab-files/lab-03/self-check.mjs",
+      "bytes": 3057,
+      "sha256": "9e28573717840ba51363cbc28faa8e0b04af300f8be501ade3aa328fb8c66406"
+    },
+    {
+      "path": "lab-files/optional/README.md",
+      "bytes": 215,
+      "sha256": "ce783f8e023602c67e31d61c75d3016d03bcd8fd24c1c41f68c261c7318ee222"
+    },
+    {
+      "path": "lab-files/optional/lab-04/activation-observation.template.json",
+      "bytes": 695,
+      "sha256": "87f0087c7032cd452739522ce89d8761ec2ec1b4188ed531a64455b10ac3aa6f"
+    },
+    {
+      "path": "lab-files/optional/lab-04/examples/bad-observation.json",
+      "bytes": 417,
+      "sha256": "2360e048f03b704c975ab8fd859dcd643e7c73058e790a0e74482aee33f952ad"
+    },
+    {
+      "path": "lab-files/optional/lab-04/examples/good-observation.json",
+      "bytes": 1039,
+      "sha256": "d8b0b9e5a98bdc38feb01b56487ea5ff03adce170668a874b48f1de0b1d1bc00"
+    },
+    {
+      "path": "lab-files/optional/lab-04/self-check.mjs",
+      "bytes": 1886,
+      "sha256": "a1f2a38011758579b08e7255725067f090816b8720b6d30a36b88b371dd34fbb"
+    },
+    {
+      "path": "lab-files/optional/lab-05/eval-preflight.template.json",
+      "bytes": 1092,
+      "sha256": "5f1c10d4c33fa103bc3a5f48a75840d2ebc8077205c0b1de265b5ba7d672def3"
+    },
+    {
+      "path": "lab-files/optional/lab-05/examples/bad-preflight.json",
+      "bytes": 559,
+      "sha256": "1d6ef91134a69993290d936202bf0efca03c61219fd96c23299a4eb9be1d214b"
+    },
+    {
+      "path": "lab-files/optional/lab-05/examples/good-preflight.json",
+      "bytes": 1329,
+      "sha256": "045e4264ed34869b5ef448ea82bf64d554d0e1bb175588307743b9499b4d2c1c"
+    },
+    {
+      "path": "lab-files/optional/lab-05/self-check.mjs",
+      "bytes": 2066,
+      "sha256": "88bbc623c019e899b32b3043ce8d3edb3af6e45a6a608189c8551ddb8b1630be"
+    },
+    {
+      "path": "lab-manual/01-trace-an-agent.md",
+      "bytes": 4710,
+      "sha256": "d93040fc16ec4e2b0033ea895f3e53746aada74df4e95f199c903e0dca3b12d2"
+    },
+    {
+      "path": "lab-manual/02-build-a-skill.md",
+      "bytes": 10274,
+      "sha256": "5b27f23628cd679b6e25944cde3e8bca16240e8acef23aa7382f1ed118368736"
+    },
+    {
+      "path": "lab-manual/03-choose-capability-boundaries.md",
+      "bytes": 3473,
+      "sha256": "c6671d00c6f451a545ceb7789dba5ca0b0c60ea65dc6131501a955264689a060"
+    },
+    {
+      "path": "lab-manual/README.md",
+      "bytes": 4930,
+      "sha256": "03b5a73b6f6d3c12c988780df8bde690711e68f2d2fa3aebe8219f05fa1644d4"
+    },
+    {
+      "path": "lab-manual/optional/04-activate-and-observe.md",
+      "bytes": 5379,
+      "sha256": "09bead59ed4687f0b6c321960961fda82f79afd9cb88f7d385e69a4597a551db"
+    },
+    {
+      "path": "lab-manual/optional/05-evaluate-an-agent.md",
+      "bytes": 5263,
+      "sha256": "9e4052076672d25481936cc8256b836ff3cc72b5d1e69a2564cd1da53b2c7d65"
+    },
+    {
+      "path": "resources/THIRD_PARTY_NOTICES.md",
+      "bytes": 388,
+      "sha256": "37d78f9da0dbde44edc1fae12997055e33260ab921ea8d0bdd9fd75ea095d2a8"
+    },
+    {
+      "path": "resources/further-reading.md",
+      "bytes": 1493,
+      "sha256": "221170dda9d6fc85bb44d2603e0995e41ead9e770e507c83c798642c875b46a9"
+    },
+    {
+      "path": "resources/glossary.md",
+      "bytes": 1837,
+      "sha256": "7e934ff5db739eef25ced977d538f6abebe9136b55b591cd620c55745678abf6"
+    },
+    {
+      "path": "resources/licenses/withastro-flue-LICENSE",
+      "bytes": 11463,
+      "sha256": "0d8ab24b4f8637ce722d0c4277cb470b89d0ee4cfe2a1e66ca30121807c9c800"
+    },
+    {
+      "path": "resources/references.md",
+      "bytes": 3032,
+      "sha256": "69fb6465c00cb1c2bf2c1415c7fa77d128483d39689ee9e8e1684edba91b4937"
+    },
+    {
+      "path": "syllabus.md",
+      "bytes": 7141,
+      "sha256": "1981eb6f25c91dc11ec5fdba654f050d585704be3939397eff067a806b32ada8"
+    },
+    {
+      "path": "textbook/01-agent-harness.md",
+      "bytes": 7146,
+      "sha256": "3eaaf8ad706abd24336a1035206a3254d10943701a5b45f1d1c2ffae7b18e525"
+    },
+    {
+      "path": "textbook/02-skills-and-context.md",
+      "bytes": 7965,
+      "sha256": "e39f0917e506af71109cad292be76e585afd47e1c73ea4a25e5cb3e1fb1c7329"
+    },
+    {
+      "path": "textbook/03-tools-and-sandboxes.md",
+      "bytes": 8146,
+      "sha256": "9139e10a8261f951b53326f669f9639457eca9ee00510785413aa6e3955f805a"
+    },
+    {
+      "path": "textbook/04-evaluation-and-observability.md",
+      "bytes": 7508,
+      "sha256": "7d1e39011d329afe4c5605c910dc1b093e03c0b4d310a2b3ad78540ed8aab35e"
+    },
+    {
+      "path": "textbook/README.md",
+      "bytes": 2246,
+      "sha256": "098bd53b1c61917d47fb0a8cc975f9ac68dcae83987adfbaddd5ee20253ddd9f"
+    }
+  ],
+  "courseFiles": [
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1418,
+      "sha256": "588c8d1067649567b7dd78d4b2f0df90b7d965ebe1e812eb6818717b53783d81"
+    },
+    {
+      "path": "course.json",
+      "bytes": 3921,
+      "sha256": "7263da9d47d6d5a53d83454645b78d1a63cc9b1e1815e44c059b6779c0eb3506"
+    },
+    {
+      "path": "lab-manual/01-trace-an-agent.md",
+      "bytes": 4710,
+      "sha256": "d93040fc16ec4e2b0033ea895f3e53746aada74df4e95f199c903e0dca3b12d2"
+    },
+    {
+      "path": "lab-manual/02-build-a-skill.md",
+      "bytes": 10274,
+      "sha256": "5b27f23628cd679b6e25944cde3e8bca16240e8acef23aa7382f1ed118368736"
+    },
+    {
+      "path": "lab-manual/03-choose-capability-boundaries.md",
+      "bytes": 3473,
+      "sha256": "c6671d00c6f451a545ceb7789dba5ca0b0c60ea65dc6131501a955264689a060"
+    },
+    {
+      "path": "lab-manual/README.md",
+      "bytes": 5122,
+      "sha256": "845bb0c89245dae5adaa5bfd4ddefaa6821c06d0d019d0d4451da285b7a29a7a"
+    },
+    {
+      "path": "lab-manual/optional/04-activate-and-observe.md",
+      "bytes": 5379,
+      "sha256": "09bead59ed4687f0b6c321960961fda82f79afd9cb88f7d385e69a4597a551db"
+    },
+    {
+      "path": "lab-manual/optional/05-evaluate-an-agent.md",
+      "bytes": 5263,
+      "sha256": "9e4052076672d25481936cc8256b836ff3cc72b5d1e69a2564cd1da53b2c7d65"
+    },
+    {
+      "path": "overview.md",
+      "bytes": 3050,
+      "sha256": "1e8ad1ac67216c9ff143e535faaad701491843918e0100d0122efb01912aff5a"
+    },
+    {
+      "path": "resources/apache-2.0.md",
+      "bytes": 11670,
+      "sha256": "79d2c2997f97cc4bc57a43be1a30116313c6a03204a1a43bfe11d96505885f13"
+    },
+    {
+      "path": "resources/further-reading.md",
+      "bytes": 1493,
+      "sha256": "221170dda9d6fc85bb44d2603e0995e41ead9e770e507c83c798642c875b46a9"
+    },
+    {
+      "path": "resources/glossary.md",
+      "bytes": 1837,
+      "sha256": "7e934ff5db739eef25ced977d538f6abebe9136b55b591cd620c55745678abf6"
+    },
+    {
+      "path": "resources/references.md",
+      "bytes": 3139,
+      "sha256": "f3eefde7e54d02783a36dd883a8d7b0a5b3806b4798fb7be58b4a823ddcd7a85"
+    },
+    {
+      "path": "textbook/01-agent-harness.md",
+      "bytes": 7146,
+      "sha256": "3eaaf8ad706abd24336a1035206a3254d10943701a5b45f1d1c2ffae7b18e525"
+    },
+    {
+      "path": "textbook/02-skills-and-context.md",
+      "bytes": 7965,
+      "sha256": "e39f0917e506af71109cad292be76e585afd47e1c73ea4a25e5cb3e1fb1c7329"
+    },
+    {
+      "path": "textbook/03-tools-and-sandboxes.md",
+      "bytes": 8146,
+      "sha256": "9139e10a8261f951b53326f669f9639457eca9ee00510785413aa6e3955f805a"
+    },
+    {
+      "path": "textbook/04-evaluation-and-observability.md",
+      "bytes": 7717,
+      "sha256": "e7026fcf17d77e599fab7e2ae6bb47576123f84cd055a207a8741613eb2c9e97"
+    }
+  ],
+  "sourceMap": [
+    {
+      "chapterId": "overview",
+      "target": "overview.md",
+      "source": [
+        "README.md",
+        "syllabus.md",
+        "textbook/README.md"
+      ],
+      "treatment": "New platform overview adapted from original course goals and routes"
+    },
+    {
+      "chapterId": "environment",
+      "source": "lab-manual/README.md",
+      "target": "lab-manual/README.md",
+      "treatment": "Explicitly marked editorial adaptation; original code fences preserved"
+    },
+    {
+      "chapterId": "harness-concepts",
+      "source": "textbook/01-agent-harness.md",
+      "target": "textbook/01-agent-harness.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "trace-an-agent",
+      "source": "lab-manual/01-trace-an-agent.md",
+      "target": "lab-manual/01-trace-an-agent.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "skill-concepts",
+      "source": "textbook/02-skills-and-context.md",
+      "target": "textbook/02-skills-and-context.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "build-a-skill",
+      "source": "lab-manual/02-build-a-skill.md",
+      "target": "lab-manual/02-build-a-skill.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "sandbox-concepts",
+      "source": "textbook/03-tools-and-sandboxes.md",
+      "target": "textbook/03-tools-and-sandboxes.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "choose-boundaries",
+      "source": "lab-manual/03-choose-capability-boundaries.md",
+      "target": "lab-manual/03-choose-capability-boundaries.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "evaluation-concepts",
+      "source": "textbook/04-evaluation-and-observability.md",
+      "target": "textbook/04-evaluation-and-observability.md",
+      "treatment": "Explicitly marked editorial adaptation; original code fences preserved"
+    },
+    {
+      "chapterId": "activate-and-observe",
+      "source": "lab-manual/optional/04-activate-and-observe.md",
+      "target": "lab-manual/optional/04-activate-and-observe.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "evaluate-an-agent",
+      "source": "lab-manual/optional/05-evaluate-an-agent.md",
+      "target": "lab-manual/optional/05-evaluate-an-agent.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "glossary",
+      "source": "resources/glossary.md",
+      "target": "resources/glossary.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "references",
+      "source": "resources/references.md",
+      "target": "resources/references.md",
+      "treatment": "Explicitly marked editorial adaptation; original code fences preserved"
+    },
+    {
+      "chapterId": "further-reading",
+      "source": "resources/further-reading.md",
+      "target": "resources/further-reading.md",
+      "treatment": "Byte-identical teaching document"
+    },
+    {
+      "chapterId": "third-party-notices",
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "THIRD_PARTY_NOTICES.md",
+      "treatment": "Explicitly marked editorial adaptation; original code fences preserved"
+    },
+    {
+      "chapterId": "apache-license",
+      "target": "resources/apache-2.0.md",
+      "source": "resources/licenses/withastro-flue-LICENSE",
+      "treatment": "Verbatim license wrapped in Markdown"
+    }
+  ]
+}
