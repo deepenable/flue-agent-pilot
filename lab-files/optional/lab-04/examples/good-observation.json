@@ -1,0 +1,21 @@
+{
+  "authorization": {
+    "learner_owned_credentials": true,
+    "secret_values_recorded": false,
+    "cost_permission_acknowledged": true
+  },
+  "environment": {
+    "node_version": "v22.0.0 or later",
+    "pnpm_invocation": "corepack pnpm",
+    "workspace": "disposable-copy"
+  },
+  "command": "corepack pnpm --dir .\\examples\\imported-skill exec flue run .\\src\\agents\\with-imported-skill.ts --message \"Run the review skill demo.\" --env ..\\..\\learner.env",
+  "evidence": {
+    "before_output_summary": "The learner recorded a run before editing CHECKLIST.txt in their own disposable copy.",
+    "after_output_summary": "The learner recorded a run after adding LAB04-RESOURCE-MARKER to CHECKLIST.txt.",
+    "trace_status": "not_available_in_my_setup",
+    "tool_or_event_evidence": "",
+    "negative_resource_case": "The learner temporarily moved CHECKLIST.txt in the disposable copy and observed a resource-related failure or behavior change, then restored it."
+  },
+  "result_status": "learner_observed"
+}

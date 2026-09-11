@@ -1,0 +1,16 @@
+{
+  "authorization": {
+    "learner_owned_credentials": false,
+    "secret_values_recorded": true,
+    "cost_permission_acknowledged": false
+  },
+  "command": "agent run",
+  "evidence": {
+    "before_output_summary": "It worked.",
+    "after_output_summary": "",
+    "trace_status": "not_observed",
+    "tool_or_event_evidence": "",
+    "negative_resource_case": ""
+  },
+  "result_status": "passed"
+}

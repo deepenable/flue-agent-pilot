@@ -1,0 +1,25 @@
+{
+  "decisions": [
+    {
+      "scenario_id": "trusted-native-build",
+      "sandbox": "virtual",
+      "rationale": "It is safe.",
+      "why_not": {},
+      "risk_controls": []
+    },
+    {
+      "scenario_id": "untrusted-text-transform",
+      "sandbox": "local",
+      "rationale": "Local is fastest and says success.",
+      "why_not": {},
+      "risk_controls": []
+    },
+    {
+      "scenario_id": "durable-issue-workspace",
+      "sandbox": "virtual",
+      "rationale": "No cloud needed.",
+      "why_not": {},
+      "risk_controls": []
+    }
+  ]
+}

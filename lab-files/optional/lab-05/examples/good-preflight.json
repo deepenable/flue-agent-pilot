@@ -1,0 +1,31 @@
+{
+  "authorization": {
+    "learner_owned_credentials": true,
+    "secret_values_recorded": false,
+    "target_agent_authorized": true,
+    "cost_permission_acknowledged": true
+  },
+  "static_source_basis": [
+    "source/examples/vitest-evals/README.md",
+    "source/examples/vitest-evals/package.json",
+    "source/examples/vitest-evals/vitest.evals.config.ts",
+    "source/examples/vitest-evals/src/evals/harness.ts",
+    "source/examples/vitest-evals/src/evals/service-health.eval.ts"
+  ],
+  "commands": {
+    "server": "corepack pnpm --filter example-vitest-evals dev",
+    "eval": "corepack pnpm --filter example-vitest-evals evals",
+    "info": "corepack pnpm --filter example-vitest-evals evals:info",
+    "json": "corepack pnpm --filter example-vitest-evals evals:json"
+  },
+  "target": {
+    "FLUE_AGENT_URL": "http://127.0.0.1:3583/agents/service-status"
+  },
+  "negative_task_condition": {
+    "description": "Ask a non-health question and assert the health-status tool is not called.",
+    "expected_structured_outcome": "The transcript should not contain a get_service_status tool call for the non-health input.",
+    "expected_tool_usage": "toolCalls(result).map(call => call.name) does not contain get_service_status"
+  },
+  "result_status": "not_run",
+  "live_result_summary": ""
+}

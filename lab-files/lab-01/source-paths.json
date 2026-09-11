@@ -1,0 +1,11 @@
+{
+  "snapshot": "withastro/flue@cd80df610c39643cc43c06d1cf47132ffc604d55",
+  "allowed_source_anchors": [
+    "source/examples/imported-skill/src/agents/with-imported-skill.ts",
+    "source/examples/imported-skill/src/skills/review/SKILL.md",
+    "source/examples/imported-skill/src/skills/review/CHECKLIST.txt",
+    "source/apps/docs/src/content/docs/guide/skills.md",
+    "source/packages/runtime/src/hooks/use-skill.ts",
+    "source/packages/runtime/src/agent.ts"
+  ]
+}

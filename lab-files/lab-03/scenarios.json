@@ -1,0 +1,22 @@
+{
+  "scenarios": [
+    {
+      "id": "trusted-native-build",
+      "summary": "受信任专用工作区中的 coding agent 需要运行真实 pnpm test、本机工具链和文件修改。",
+      "must_have": ["native_processes", "real_filesystem"],
+      "risk": "host_access"
+    },
+    {
+      "id": "untrusted-text-transform",
+      "summary": "多租户请求提交不可信文本片段，只需要临时文件处理和 allowlisted HTTP。",
+      "must_have": ["isolation", "ephemeral_workspace"],
+      "risk": "tenant_escape"
+    },
+    {
+      "id": "durable-issue-workspace",
+      "summary": "每个 issue 需要一个可恢复的远程 Linux 工作区，可能跨消息继续使用。",
+      "must_have": ["durable_remote_workspace", "provider_resource_owner"],
+      "risk": "cost_cleanup_cancellation"
+    }
+  ]
+}

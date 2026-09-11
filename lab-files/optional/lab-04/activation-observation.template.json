@@ -1,0 +1,21 @@
+{
+  "authorization": {
+    "learner_owned_credentials": false,
+    "secret_values_recorded": false,
+    "cost_permission_acknowledged": false
+  },
+  "environment": {
+    "node_version": "",
+    "pnpm_invocation": "corepack pnpm",
+    "workspace": "disposable-copy"
+  },
+  "command": "corepack pnpm --dir .\\examples\\imported-skill exec flue run .\\src\\agents\\with-imported-skill.ts --message \"Run the review skill demo.\" --env ..\\..\\learner.env",
+  "evidence": {
+    "before_output_summary": "",
+    "after_output_summary": "",
+    "trace_status": "not_observed",
+    "tool_or_event_evidence": "",
+    "negative_resource_case": ""
+  },
+  "result_status": "not_run"
+}

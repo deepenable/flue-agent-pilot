@@ -1,0 +1,13 @@
+{
+  "flow_nodes": [
+    {
+      "type": "static_import",
+      "description": "SKILL.md is imported."
+    }
+  ],
+  "source_anchors": [
+    "authoring-record-id"
+  ],
+  "boundary_notes": "The skill grants shell access and full file access.",
+  "human_completion_criteria": "It says success."
+}

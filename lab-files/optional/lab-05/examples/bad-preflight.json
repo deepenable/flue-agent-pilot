@@ -1,0 +1,23 @@
+{
+  "authorization": {
+    "learner_owned_credentials": false,
+    "secret_values_recorded": true,
+    "target_agent_authorized": false,
+    "cost_permission_acknowledged": false
+  },
+  "static_source_basis": [],
+  "commands": {
+    "server": "pnpm start",
+    "eval": "pnpm test"
+  },
+  "target": {
+    "FLUE_AGENT_URL": ""
+  },
+  "negative_task_condition": {
+    "description": "",
+    "expected_structured_outcome": "",
+    "expected_tool_usage": ""
+  },
+  "result_status": "passed",
+  "live_result_summary": "The model said yes."
+}

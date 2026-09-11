@@ -1,0 +1,32 @@
+{
+  "flow_nodes": [
+    {
+      "type": "static_import",
+      "description": "with-imported-skill.ts imports review from ../skills/review/SKILL.md."
+    },
+    {
+      "type": "use_skill_mount",
+      "description": "useSkill(review) mounts the imported SkillReference in the current render."
+    },
+    {
+      "type": "available_skills",
+      "description": "The runtime lists name and description in Available Skills."
+    },
+    {
+      "type": "activate_skill",
+      "description": "The model may call activate_skill at runtime; this lab does not observe a live call."
+    },
+    {
+      "type": "supporting_file",
+      "description": "CHECKLIST.txt is packaged with the review skill and read lazily."
+    }
+  ],
+  "source_anchors": [
+    "source/examples/imported-skill/src/agents/with-imported-skill.ts",
+    "source/examples/imported-skill/src/skills/review/SKILL.md",
+    "source/examples/imported-skill/src/skills/review/CHECKLIST.txt",
+    "source/apps/docs/src/content/docs/guide/skills.md"
+  ],
+  "boundary_notes": "A skill teaches behavior and does not grant shell or workspace file access. File and command tools come from a sandbox.",
+  "human_completion_criteria": "A reviewer can follow the listed paths and see import, mount, activation mechanism, supporting file, and sandbox boundary."
+}

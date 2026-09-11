@@ -1,0 +1,34 @@
+{
+  "decisions": [
+    {
+      "scenario_id": "trusted-native-build",
+      "sandbox": "",
+      "rationale": "",
+      "why_not": {
+        "virtual": "",
+        "remote": ""
+      },
+      "risk_controls": []
+    },
+    {
+      "scenario_id": "untrusted-text-transform",
+      "sandbox": "",
+      "rationale": "",
+      "why_not": {
+        "local": ""
+      },
+      "risk_controls": []
+    },
+    {
+      "scenario_id": "durable-issue-workspace",
+      "sandbox": "",
+      "rationale": "",
+      "why_not": {
+        "local": "",
+        "virtual": ""
+      },
+      "risk_controls": []
+    }
+  ],
+  "notes": "Write a short ADR after this JSON if your instructor asks for prose."
+}

@@ -1,0 +1,34 @@
+{
+  "decisions": [
+    {
+      "scenario_id": "trusted-native-build",
+      "sandbox": "local",
+      "rationale": "It needs real native processes and the real filesystem in a trusted dedicated workspace.",
+      "why_not": {
+        "virtual": "virtual uses emulated bash and does not spawn native processes.",
+        "remote": "remote could work but adds provider cost and lifecycle ownership not needed for this trusted case."
+      },
+      "risk_controls": ["run only in a dedicated trusted VM or container", "do not pass all environment variables"]
+    },
+    {
+      "scenario_id": "untrusted-text-transform",
+      "sandbox": "virtual",
+      "rationale": "The task needs isolation and ephemeral files, not native processes.",
+      "why_not": {
+        "local": "local has no isolation and would expose the host to untrusted tenant input.",
+        "remote": "remote is an upgrade path if a full provider workspace is required."
+      },
+      "risk_controls": ["allowlist network if enabled", "discard ephemeral workspace after task"]
+    },
+    {
+      "scenario_id": "durable-issue-workspace",
+      "sandbox": "remote",
+      "rationale": "It needs a durable provider workspace keyed by conversation or issue.",
+      "why_not": {
+        "local": "local shares host state and is hard to govern per issue.",
+        "virtual": "virtual is ephemeral and cannot provide a durable Linux workspace."
+      },
+      "risk_controls": ["define provider resource owner", "record cleanup policy", "document cancellation limitations"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "source_facts": {
+    "root_package_manager": "pnpm@11.1.1",
+    "root_node_engine": ">=22",
+    "root_pnpm_engine": ">=11 <12",
+    "root_build_script": "turbo build",
+    "turbo_build_depends_on": ["^build"],
+    "example_package_name": "imported-skill-example",
+    "example_build_script": "vite build",
+    "workspace_imports_requiring_built_exports": [
+      "@flue/runtime",
+      "@flue/vite",
+      "@flue/cli"
+    ]
+  },
+  "dependency_install_command_from_workspace_root": "corepack pnpm install --frozen-lockfile",
+  "dependency_aware_build_command_from_workspace_root": "corepack pnpm exec turbo run build --filter=imported-skill-example",
+  "targeted_fixture_rebuild_command_from_workspace_root": "corepack pnpm exec turbo run build --filter=imported-skill-example --force",
+  "notes": [
+    "Install only prepares dependencies; it does not build workspace exports.",
+    "Use the root Turbo build with a package filter so turbo.jsonc build.dependsOn [\"^build\"] builds workspace prerequisites before the imported-skill example.",
+    "Create a new unique owned runtime root for each live run, or refuse an existing destination; do not auto-delete earlier runs.",
+    "Stage the selected fixture by copying only SKILL.md, CHECKLIST.txt, and STYLE.txt into the owned copy before building.",
+    "Use --force only for actual fixture reruns in the same owned copy.",
+    "Do not use corepack pnpm --filter imported-skill-example build as the clean-workspace verification command, and do not place a literal -- before Turbo's --filter option."
+  ],
+  "current_status": "not_run",
+  "not_run_reason": "Complete install/build/runtime verification requires a prepared and authorized workspace."
+}

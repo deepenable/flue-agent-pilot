@@ -1,0 +1,27 @@
+{
+  "flow_nodes": [
+    {
+      "type": "static_import",
+      "description": ""
+    },
+    {
+      "type": "use_skill_mount",
+      "description": ""
+    },
+    {
+      "type": "available_skills",
+      "description": ""
+    },
+    {
+      "type": "activate_skill",
+      "description": ""
+    },
+    {
+      "type": "supporting_file",
+      "description": ""
+    }
+  ],
+  "source_anchors": [],
+  "boundary_notes": "",
+  "human_completion_criteria": ""
+}
